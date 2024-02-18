@@ -1,12 +1,12 @@
-name: Feature Workflow
+name: Development Workflow
 
 on:
   pull_request:
     branches:
-      - notification-fix
+      - feature
 
 jobs:
-  update_feature_branch:
+  update_development_branch:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
