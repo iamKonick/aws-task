@@ -1,0 +1,15 @@
+name: Staging Workflow
+
+on:
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  update_staging_branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      # Add steps to build and test the code if needed
